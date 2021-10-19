@@ -1,0 +1,90 @@
+@import url('../assets/fonts/AGENCYR.TTF');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primary-color : #204977;
+    --secondary-color : #296FA5;
+    --tertiary-color : #F0FCFF;
+    --gradient : linear-gradient(180deg, #237D96 -29.21%, #5099AD -21.24%, #88BCCA -9.97%, #B5D7E1 0.48%, #D5EBF1 9.75%, #E9F8FB 17.5%, #F0FCFF 22.8%);
+    --heading : 3rem;
+    --subHeading : 2.7rem;
+    --title : 2.1rem;
+    --paragraph : 1.56rem;
+    --nav : 1.25rem;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+img.logo{
+    height: 6.25rem;
+    width: auto;
+}
+nav,footer{
+    padding: 2rem 3rem;
+}
+.section{
+    padding: 0 12rem;
+}
+.button{
+    outline: none;
+    border: none;
+    background: var(--primary-color);
+    padding: 0.4rem 1rem;
+}
+header{
+    background-image: var(--gradient);
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    color: var(--secondary-color);
+}
+input{
+    outline: none;
+    border: none;
+    text-align: center;
+}
+.header-body{
+    padding: 3rem 4rem 0 4rem;
+}
+.box{
+    border-radius: 1.7rem 1.7rem 0 0;
+    border: .5rem solid #fff;
+    border-bottom: none;
+    padding : 1rem 2rem 12rem  2rem;
+}
+.header-image{
+    width : 100%;
+    margin: -10rem 0 0 0;  
+}
+.hero{
+    height: 14rem;
+    width: 100%;
+    padding: auto;
+}
+.nav-item{
+    font-size: var(--nav);
+    color: var(--primary-color);
+}
+.heading{
+    font-size: var(--heading);
+    color: var(--primary-color);
+    padding: 1rem 0 1rem 0;
+}
+.paragraph{
+    font-size: var(--paragraph);
+    color: #5E93BB;
+}
+.date-box{
+    margin: 1rem 0 0 0 ;
+    height: 4rem;
+    background-color: #00f;
+    border-radius: 0.6rem;
+    padding: 0;
+}
+
