@@ -1,4 +1,4 @@
-@import url('../assets/fonts/AGENCYR.TTF');
+@import url(./fonts.css);
 *{
     margin: 0;
     padding: 0;
@@ -26,13 +26,27 @@ nav,footer{
     padding: 2rem 3rem;
 }
 .section{
-    padding: 0 12rem;
+    margin: auto;
+    padding: 6.5rem 0 0;
+}
+.section .heading{
+    font-size: var(--subHeading);
+    color: var(--primary-color);
+    font-family: 'KG Cold Coffee';
+}
+.section-body{
+    padding: 4.5rem 0 0 0;
 }
 .button{
     outline: none;
     border: none;
-    background: var(--primary-color);
-    padding: 0.4rem 1rem;
+    background: linear-gradient(92.33deg, #123D6E 5.25%, #2970A7 99.05%);;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    font-family: 'Lato';
+    font-size: 0.75rem;
+    font-weight: 800;
 }
 header{
     background-image: var(--gradient);
@@ -56,11 +70,11 @@ input{
     border-radius: 1.7rem 1.7rem 0 0;
     border: .5rem solid #fff;
     border-bottom: none;
-    padding : 1rem 2rem 12rem  2rem;
+    padding : 1rem 2rem 14rem  2rem;
 }
 .header-image{
     width : 100%;
-    margin: -10rem 0 0 0;  
+    margin: -9rem 0 0 0;  
 }
 .hero{
     height: 14rem;
@@ -70,21 +84,70 @@ input{
 .nav-item{
     font-size: var(--nav);
     color: var(--primary-color);
+    font-family: 'Kiwi Medium';
 }
-.heading{
+.header-body .heading{
     font-size: var(--heading);
+    font-family: 'KG Cold Coffee';
     color: var(--primary-color);
-    padding: 1rem 0 1rem 0;
+    padding: 1rem 0 1.5rem 0;
 }
-.paragraph{
+.header-body .paragraph{
     font-size: var(--paragraph);
+    font-family: 'Lato';
     color: #5E93BB;
+    padding: 0 0 1.5rem 0;
 }
 .date-box{
-    margin: 1rem 0 0 0 ;
     height: 4rem;
-    background-color: #00f;
+    background-color: #fff;
     border-radius: 0.6rem;
     padding: 0;
+}
+.input-container{
+    text-align: center;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-container:nth-child(1),.input-container:nth-child(2){
+    border-right: solid 0.38px var(--secondary-color);
+}
+.icon-card{
+    display: flex;
+    align-items: center;
+}
+.icon-card .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--tertiary-color);
+    width: 13vw;
+    height: 13vw; 
+}
+.icon-card .icon img{
+    width: 8vw;
+    height: 8vw;
+}
+.card-body{
+    padding: 0 0 0 2.2rem;
+}
+.card-title{
+    font-size: var(--title);
+    font-family: 'Kiwi Medium';
+    font-weight: 500;
+    padding: 0 0 1rem 0;
+    color: var(--secondary-color);
+}
+.card-content{
+    font-size: var(--paragraph);
+    font-family: 'Lato';
+    font-weight: 600;
+    color: #296FA5;
+}
+.section-body .row{
+    margin: 0 0 4rem 0;
 }
 

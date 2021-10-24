@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'KG Cold Coffee';
+    src: url('../assets/fonts/KGColdCoffee.ttf');
+}
+@font-face {
+    font-family: 'Agency FB';
+    src: url(../assets/fonts/AGENCYR.TTF);
+}
+@font-face {
+    font-family: 'Kiwi Light';
+    src: url(../assets/fonts/KiwiMaru-Light.ttf);
+}
+@font-face {
+    font-family: 'Kiwi Regular';
+    src: url(../assets/fonts/KiwiMaru-Regular.ttf);
+}
+@font-face {
+    font-family: 'Kiwi Medium';
+    src: url(../assets/fonts/KiwiMaru-Medium.ttf);
+}
+@font-face {
+    font-family: 'Lato';
+    src: url(../assets/fonts/Lato-Light.ttf);
+}
