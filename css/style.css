@@ -150,4 +150,10 @@ input{
 .section-body .row{
     margin: 0 0 4rem 0;
 }
-
+.section .paragraph{
+    font-family: 'Kiwi Regular';
+    font-size: var(--subHeading);
+    /* color: var(--secondary-color); */
+    color: #5E93BB;
+    margin: 0 2rem 0 0;
+}
