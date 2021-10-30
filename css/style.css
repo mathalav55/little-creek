@@ -22,7 +22,7 @@ img.logo{
     height: 6.25rem;
     width: auto;
 }
-nav,footer{
+nav{
     padding: 2rem 3rem;
 }
 .section{
@@ -157,14 +157,20 @@ input{
     color: #5E93BB;
     margin: 0 2rem 0 0;
 }
+.location-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .location-section .head{
     margin: 0 0 -4rem 0;
 }
 .location-section .title{
     font-family: 'KG Cold Coffee';
-    font-size: 3rem;
-    text-align: center;
+    font-size: var(--heading);
     color: var(--primary-color);
+    text-align: center;
     padding: 0 0 1rem 0;
 }
 .location-section .title-sub{
@@ -172,4 +178,40 @@ input{
     font-size: 3.2rem;
     text-align: center;
     color: var(--secondary-color);
+}
+.feedback-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+    padding: 2rem 2rem;
+    background: var(--tertiary-color);
+    border-radius: .5rem;
+}
+.feedback-card:nth-child(1){
+    margin: 0 2rem 0 0;
+}
+.feedback-card:nth-child(3){
+    margin: 0 0 0 2rem;
+}
+.feedback-card p{
+    font-family: 'Lato';
+    font-size: var(--paragraph);
+    color: var(--primary-color);
+    text-align: center;
+    margin: 1rem 0 0 0;
+}
+.feedback-card .rating{
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+footer{
+    width: 100%;
+    margin: auto;
+}
+.dummy{
+    width: 100%;
+    height: 50vh;
+    background: #f00;
 }
