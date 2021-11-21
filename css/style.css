@@ -210,6 +210,12 @@ footer{
     width: 100%;
     margin: auto;
 }
+.faq-section{
+    background: url(../assets/images/FAQ\ Background.svg) center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: auto;
+}
 .dummy{
     width: 100%;
     height: 50vh;
