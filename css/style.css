@@ -96,7 +96,7 @@ input{
     font-size: var(--paragraph);
     font-family: 'Lato';
     color: #5E93BB;
-    padding: 0 0 1.5rem 0;
+    padding: 0 0 2rem 0;
 }
 .date-box{
     height: 4rem;
@@ -215,9 +215,16 @@ footer{
     background-size: cover;
     height: 100vh;
     width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .dummy{
     width: 100%;
     height: 50vh;
     background: #f00;
+}
+
+.faqs{
+    width: 50%;
 }
