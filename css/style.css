@@ -215,9 +215,6 @@ footer{
     background-size: cover;
     height: 100vh;
     width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .dummy{
     width: 100%;
@@ -227,4 +224,38 @@ footer{
 
 .faqs{
     width: 50%;
+    margin: auto;
+}
+
+.faq-section .heading{
+    padding:7.25rem 0 5.3rem 0;
+}
+.faq{
+    border-top: 0.1rem var(--primary-color) solid;
+    padding: 1.5rem 0;
+}
+.faq .icon{
+    padding: 0 1.2rem 0 0;
+}
+.faq .title{
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 0.03em;
+    font-family: 'Lato Bold';
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.faq .content{
+    padding: 1rem 0 1rem 2.5rem;
+    font-size: 24px;
+    letter-spacing: 0.03em;
+    font-family: 'Lato';
+    transition: ease .2s;
+}
+
+.faq.hide .content{
+    padding: 0 !important;
+    height: 0;
+    overflow: hidden;
 }
