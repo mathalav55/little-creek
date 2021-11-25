@@ -22,6 +22,9 @@ img.logo{
     height: 6.25rem;
     width: auto;
 }
+ul{
+    list-style-type: none;
+}
 nav{
     padding: 2rem 3rem;
 }
@@ -55,7 +58,7 @@ a{
     text-decoration: none;
     color: inherit;
 }
-a:hover{
+nav a:hover{
     color: var(--secondary-color);
 }
 input{
@@ -206,10 +209,7 @@ input{
     color: var(--primary-color);
     font-size: 1.2rem;
 }
-footer{
-    width: 100%;
-    margin: auto;
-}
+
 .faq-section{
     background: url(../assets/images/FAQ\ Background.svg) center no-repeat;
     background-size: cover;
@@ -258,4 +258,52 @@ footer{
     padding: 0 !important;
     height: 0;
     overflow: hidden;
+}
+footer{
+    padding: 3rem 0 2rem 0;
+    color: var(--tertiary-color);
+    width: 100%;
+    margin-top: -10px;
+    background-color: var(--primary-color);
+}
+
+.footer-body .links h3{
+    font-family: 'KG Cold Coffee';
+    font-size: 24px;
+    letter-spacing: 1.3;
+}
+
+.footer-body .links ul{
+    font-family: 'Lato Medium';
+    font-size: 24px;
+    letter-spacing: 2.3;
+    padding: 1rem 0 0 0;
+}
+.footer-body  li{
+    padding: .5rem 0;
+}
+
+.footer-body .contact{
+    font-size: 30px;
+    font-family: 'Lato Medium';
+}
+.footer-body .contact li{
+    text-align: end;
+}
+.footer-body .contact li img{
+    padding: 0 .3rem;
+}
+.footer-body .contact .logo{
+    width: 221px;
+    height: auto;
+}
+
+.footer-body .contact span{
+    font-size: 30px;
+    font-family: 'KG Cold Coffee';
+}
+.copyright span{
+    font-size: 20px;
+    font-family: 'Lato Medium';
+    letter-spacing: 1.5;
 }
