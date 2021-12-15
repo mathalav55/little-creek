@@ -84,7 +84,7 @@ input{
     width: 100%;
     padding: auto;
 }
-.nav-item{
+.nav-menu-desktop .nav-item{
     font-size: var(--nav);
     color: var(--primary-color);
     font-family: 'Kiwi Medium';
@@ -127,8 +127,19 @@ input{
     justify-content: center;
     border-radius: 50%;
     background-color: var(--tertiary-color);
-    width: 13vw;
-    height: 13vw; 
+    width: auto;
+    height: 100%;
+    padding: 5%; 
+}
+.icon-card .info{
+    font-family: "Lato";
+    font-style: italic;
+    font-size: 12.2102px;
+    line-height: 123.19%;
+    padding: .5rem 0 0 0;
+    /* or 15px */
+    letter-spacing: 0.06em;
+    color: #296FA5;
 }
 .icon-card .icon img{
     width: 8vw;
@@ -306,4 +317,81 @@ footer{
     font-size: 20px;
     font-family: 'Lato Medium';
     letter-spacing: 1.5;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media  screen and (max-width: 480px) {
+    :root{
+        --primary-color : #204977;
+        --secondary-color : #296FA5;
+        --tertiary-color : #F0FCFF;
+        --gradient : linear-gradient(180deg, #237D96 -29.21%, #5099AD -21.24%, #88BCCA -9.97%, #B5D7E1 0.48%, #D5EBF1 9.75%, #E9F8FB 17.5%, #F0FCFF 22.8%);
+        --heading : .5rem;
+        --subHeading : 1.2rem;
+        --title : 1.2rem;
+        --paragraph : 1rem;
+        --nav : 1.25rem;
+    }
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media  screen and (max-width: 768px) {
+    :root{
+        --primary-color : #204977;
+        --secondary-color : #296FA5;
+        --tertiary-color : #F0FCFF;
+        --gradient : linear-gradient(180deg, #237D96 -29.21%, #5099AD -21.24%, #88BCCA -9.97%, #B5D7E1 0.48%, #D5EBF1 9.75%, #E9F8FB 17.5%, #F0FCFF 22.8%);
+        --heading : 1.5rem;
+        --subHeading : 1.2rem;
+        --title : 1.2rem;
+        --paragraph : 1rem;
+        --nav : 1.25rem;
+    }
+    .nav-menu-desktop{
+        display: none;
+    }
+    nav{
+        padding: .25rem;
+    } 
+    img.logo{
+        height: 4.25rem;
+        width: auto;
+    }  
+    .box{
+        border-radius: 1.25rem 1.25rem 0 0;
+        border: .3rem solid #fff;
+        border-bottom: none;
+        padding : 1rem 1rem 8rem  1rem;
+    }
+    .section{
+        margin: auto;
+        padding: 3.25rem 0 0;
+    } 
+    .section-body{
+        padding: 2.25rem 0 0 0;
+    }
+    .button{
+        padding : .75rem 1.25rem;
+        border-radius: .5rem;
+    }
+    .header-body .heading{
+        font-size: var(--heading);
+        padding: .75rem 0 .75rem 0;
+    }
+    .header-body .paragraph{
+        padding: 0 0 1.5rem 0;
+    }
+    .card-body{
+        padding: 0 0 0 1.75rem;
+    }
+    .card-title{
+        padding: 0 0 .4rem 0;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
 }
