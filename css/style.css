@@ -67,13 +67,13 @@ input{
     text-align: center;
 }
 .header-body{
-    padding: 3rem 4rem 0 4rem;
+    padding: 2rem 3rem 0 3rem;
 }
 .box{
     border-radius: 1.7rem 1.7rem 0 0;
     border: .5rem solid #fff;
     border-bottom: none;
-    padding : 1rem 2rem 14rem  2rem;
+    padding : 1rem 2rem 10rem  2rem;
 }
 .header-image{
     width : 100%;
@@ -192,6 +192,10 @@ input{
     font-size: 3.2rem;
     text-align: center;
     color: var(--secondary-color);
+}
+.location-section img{
+    width: 65vw;
+    height: auto;
 }
 .feedback-card{
     display: flex;
@@ -320,13 +324,13 @@ footer{
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media  screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
     :root{
         --primary-color : #204977;
         --secondary-color : #296FA5;
         --tertiary-color : #F0FCFF;
         --gradient : linear-gradient(180deg, #237D96 -29.21%, #5099AD -21.24%, #88BCCA -9.97%, #B5D7E1 0.48%, #D5EBF1 9.75%, #E9F8FB 17.5%, #F0FCFF 22.8%);
-        --heading : .5rem;
+        --heading : 6.5rem;
         --subHeading : 1.2rem;
         --title : 1.2rem;
         --paragraph : 1rem;
@@ -337,7 +341,7 @@ footer{
 
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media  screen and (max-width: 768px) {
+@media only screen and (max-width: 1012px) {
     :root{
         --primary-color : #204977;
         --secondary-color : #296FA5;
@@ -348,6 +352,13 @@ footer{
         --title : 1.2rem;
         --paragraph : 1rem;
         --nav : 1.25rem;
+    }
+    .web{
+        display: none;
+    }
+    .location-section .title-sub{
+        font-size: .75rem;
+        padding: 0 0 5% 0;
     }
     .nav-menu-desktop{
         display: none;
@@ -363,7 +374,7 @@ footer{
         border-radius: 1.25rem 1.25rem 0 0;
         border: .3rem solid #fff;
         border-bottom: none;
-        padding : 1rem 1rem 8rem  1rem;
+        padding : 1rem 1rem 8rem 1rem;
     }
     .section{
         margin: auto;
@@ -391,7 +402,3 @@ footer{
     }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-}
