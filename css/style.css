@@ -152,7 +152,9 @@ form *{
 }
 .accordition-title{
     display: flex;
+    align-items: center;
 }
+
 footer{
     background-color: #0f0;
 }
@@ -215,16 +217,27 @@ footer{
 }
 .rating img{
     width: 1rem;
+    margin: 0 .2rem
 }
-.accordition-title img{
-    width: 1.5rem;
-    margin-right: 0.5rem;
+
+.accordition-title:hover{
+    cursor: pointer;
+}
+.accordition-title span{
+    /* kiwi maru */
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-right: 1.5rem;
 }
 .accordition-text{
-    margin-left: 2rem;
+    padding: .75rem 0;
+    margin-left: 2.5rem;
+    transition: ease .2s;
 }
-.accordition-text{
-    height: 0;
+.accordition-item.hide .accordition-text{
+    max-height: 0;
+    padding: 0;
+    transform: translateX(-10%) translateY(-10%);    
     overflow: hidden;
 }
 footer p{
