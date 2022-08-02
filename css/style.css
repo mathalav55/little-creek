@@ -32,6 +32,9 @@ img{
 a{
     text-decoration: none;
 }
+h1,h3,h4{
+    margin: .5em 0;
+}
 h1{
     font-family: 'KG Cold Coffee';
 }
@@ -51,6 +54,9 @@ input,button,select,option{
     outline: none;
     border: none;
 }
+form *{
+    font-family: 'Lato';
+}
 /* --Geneeric Tags End-- */
 
 
@@ -58,12 +64,16 @@ input,button,select,option{
 header{background-color: #0f0;}
 .container{background-color: #0ff;}
 .attraction-item{background-color: #dd00ff;}
-.attraction-image{background-color: #0f0;}
-.feedback-card{background-color: #0f0;}
+.attraction-image{background-color: #fff;}
+.attraction-image img{background-color: #0f0;}
+.attraction-body{background-color: #f00;}
+.feedback-card{background-color: #dd00ff;}
 .faq .section-body{background-color: #dd00ff;}
 .accordition-text{background-color: #0f0;}
 .about .section-image{background-color: #dd00ff;}
 footer{background-color: #f00;}
+.footer-links{background-color: #dd00ff;}
+.footer-contact{background-color: #0f0;}
 nav ul{background-color: #f00;}
 /* layout colors end */
 
@@ -73,6 +83,7 @@ nav ul{background-color: #f00;}
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 1rem;
 }
 header{
     padding-top: 1rem;
@@ -148,11 +159,13 @@ form *{
 .ham-menu.open span:nth-child(3){
     transform: rotate(-45deg);
 }
-
 .attraction-image{
-    max-width: 15%;
-    padding: 3em;
+    width: 15%;
+    padding: 2.5rem;
     border-radius: 50%;
+}
+.attraction-body{
+    margin: .75rem;
 }
 .row{
     flex-wrap: wrap;
@@ -182,13 +195,11 @@ form *{
 .faq .section-body{
     width: 90%;
     margin: auto;
+    padding: .5rem 1rem;
 }
 .accordition-title{
     display: flex;
     align-items: center;
-}
-footer{
-    background-color: #f0f;
 }
 .footer-body{
     display: flex;
@@ -196,6 +207,7 @@ footer{
     align-items: center;
 }
 .footer-links{
+    padding: 0 .5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -209,6 +221,25 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.footer-links,.footer-contact{
+    margin: .75rem 0;
+}
+.social-media{
+    margin-top: .75rem;
+}
+.footer-contact>img{
+    width: 50%;
+    margin: .5rem 0;
+}
+.footer-links a{
+    margin-bottom: .5rem;
+}
+.phone-number,.email{
+    margin-bottom: .5rem;
+}
+.footer-links{
+    margin: .5rem 0;
 }
 /* --Layout End-- */
 .location h1{
@@ -229,8 +260,15 @@ footer{
 .hero-title,.hero-text{
     text-align: center;
 }
-.social-icon{
-    width: 30%;
+.social-icons{
+    display: flex;
+    justify-content: space-around;
+}
+.social-icons{
+    margin: .5rem;
+}
+.social-icons a{
+    width: 25%;
 }
 .feedback-card{
     width: 55%;
@@ -255,6 +293,7 @@ footer{
 }
 .accordition-title span{
     /* kiwi maru */
+    font-family: 'Kiwi Medium';
     font-size: 2rem;
     font-weight: bolder;
     margin-right: 1.5rem;
@@ -273,9 +312,7 @@ footer{
 footer p{
     text-align: center;
 }
-.footer-contact>img{
-    width: 50%;
-}
+
 @media screen and (max-width : 768px) {
     nav ul{
         position: absolute;
@@ -308,7 +345,7 @@ footer p{
         text-align: left;
     }
     .attraction-item{
-        width: 45%;
+        width: 37%;
         flex-direction: row;
     }
     .row{
@@ -346,11 +383,14 @@ footer p{
         align-items: flex-start;
     }
     .footer-links{
-        width: 25%;
+        width: 20%;
+        margin: 0 .5rem;
         align-items: flex-start;
     }
     .footer-contact{
         align-items: flex-end;
+        margin: 0;
+        width: 35%;
     }
     footer p{
         text-align: left;
@@ -359,9 +399,12 @@ footer p{
         flex-direction: row;
         justify-content: end;
     }
-    .social-icon{
-        width: 25%;
+    .social-icons a{
+        width: 20%;
         margin-left: 0.5rem;
+    }
+    .social-icons{
+        margin: 1rem 0 1rem 1rem;
     }
 }
 
