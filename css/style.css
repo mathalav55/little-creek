@@ -1,4 +1,6 @@
 @import url(./fonts.css);
+
+
 *{
     margin: 0;
     padding: 0;
@@ -14,29 +16,65 @@
     --paragraph : 1.56rem;
     --nav : 1.25rem;
 }
-
 ::-webkit-scrollbar{
     display: none;
 }
+
+
 /* Generic Tags */
 html,body {
     position: relative;
     overflow-x: hidden;
 }
-
 img{
     width: 100%;
 }
+a{
+    text-decoration: none;
+}
+h1{
+    font-family: 'KG Cold Coffee';
+}
+p,a{
+    font-family: 'Lato';
+}
+h4{
+    font-family: 'Kiwi Medium';
+}
+h3{
+    font-family: 'Lato Medium';
+}
+footer h3{
+    font-family: 'KG Cold Coffee';
+}
+input,button,select,option{
+    outline: none;
+    border: none;
+}
 /* --Geneeric Tags End-- */
+
+
+/* layout colors */
+header{background-color: #0f0;}
+.container{background-color: #0ff;}
+.attraction-item{background-color: #dd00ff;}
+.attraction-image{background-color: #0f0;}
+.feedback-card{background-color: #0f0;}
+.faq .section-body{background-color: #dd00ff;}
+.accordition-text{background-color: #0f0;}
+.about .section-image{background-color: #dd00ff;}
+footer{background-color: #f00;}
+nav ul{background-color: #f00;}
+/* layout colors end */
+
+
 /* Layout */
 .container{
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #00fff7;
 }
 header{
-    background-color: #f0f;
     padding-top: 1rem;
 }
 .section{
@@ -55,9 +93,6 @@ nav img{
 nav ul{
     align-items: center;
     transition: .2s ease;
-}
-nav ul.active{
-    transform: translateX(10%);
 }
 nav li{
     list-style: none;
@@ -83,7 +118,6 @@ form *{
     flex-direction: column;
     align-items: center;
     margin: 1rem auto;
-    background-color: #f0f;
 }
 
 .ham-menu{
@@ -118,7 +152,6 @@ form *{
 .attraction-image{
     max-width: 15%;
     padding: 3em;
-    background-color: aqua;
     border-radius: 50%;
 }
 .row{
@@ -154,9 +187,8 @@ form *{
     display: flex;
     align-items: center;
 }
-
 footer{
-    background-color: #0f0;
+    background-color: #f0f;
 }
 .footer-body{
     display: flex;
@@ -203,7 +235,6 @@ footer{
 .feedback-card{
     width: 55%;
     margin: 1rem auto;
-    background-color: #f00;
     padding: 1rem 1.5rem;
 }
 .feedback-card p{
@@ -219,7 +250,6 @@ footer{
     width: 1rem;
     margin: 0 .2rem
 }
-
 .accordition-title:hover{
     cursor: pointer;
 }
@@ -251,11 +281,13 @@ footer p{
         position: absolute;
         right: 0;
         top: 0;
-        background-color: #f00;
         transform: translateX(100%);
     }
+    nav ul.active{
+        transform: translateX(10%);
+    }
 }
-@media screen and (min-width: 768px){  
+@media screen and (min-width: 769px){  
     .ham-menu{
         display: none;
     }
@@ -277,7 +309,6 @@ footer p{
     }
     .attraction-item{
         width: 45%;
-        background-color: #9dff00;
         flex-direction: row;
     }
     .row{
