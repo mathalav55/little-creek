@@ -4,7 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Little Creek</title>
     <link rel="shortcut icon" href="assets/icons/Logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body >
@@ -18,9 +17,9 @@
                 <span></span>
             </div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Camp Attractions</a></li>
-                <li><a href="#">FAQ</a></li>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#attractions">Camp Attractions</a></li>
+                <li><a href="#faq">FAQ</a></li>
                 <li><a href="#">Login</a></li>
             </ul>
         </nav>
@@ -37,7 +36,7 @@
                         <option value="">type 3</option>
                         <option value="">type 2</option>
                     </select>
-                    <button type="submit">Submit</button>
+                    <button type="submit">Book Now</button>
                 </form>
             </div>
             <p class="hero-text">
@@ -49,7 +48,7 @@
         </div>
         <img src="./assets/images/header_image.svg" alt="">
     </header>
-        <div class="section container attractions">
+        <div class="section container attractions" id="attractions">
             <h1 class="section-title">
                 Discover more at Little Creek..
             </h1>
@@ -68,6 +67,9 @@
                                 Make your way 
                                 out & create memories
                             </p>
+                            <p class="coming-soon">
+                                Coming Soon...
+                            </p>
                         </div>
                     </div>
                     <!-- Attraction Item -->
@@ -81,6 +83,9 @@
                             </h4>
                             <p class="attraction-text">
                                 Make your way out & create memories
+                            </p>
+                            <p class="coming-soon">
+                                Coming Soon...
                             </p>
                         </div>
                     </div>
@@ -97,6 +102,9 @@
                             <p class="attraction-text">
                                 Make your way out & create memories
                             </p>
+                            <p class="coming-soon">
+                                Coming Soon...
+                            </p>
                         </div>
                     </div>
                     <div class="attraction-item">
@@ -109,6 +117,9 @@
                             </h4>
                             <p class="attraction-text">
                                 Make your way out & create memories
+                            </p>
+                            <p class="coming-soon">
+                                Coming Soon...
                             </p>
                         </div>
                     </div>
@@ -126,6 +137,9 @@
                                 Make your way 
                                 out & create memories
                             </p>
+                            <p class="coming-soon">
+                                Coming Soon...
+                            </p>
                         </div>
                     </div>
                     <div class="attraction-item">
@@ -139,6 +153,9 @@
                             <p class="attraction-text">
                                 Make your way 
                                 out & create memories
+                            </p>
+                            <p class="coming-soon">
+                                Coming Soon...
                             </p>
                         </div>
                     </div>
@@ -156,6 +173,9 @@
                                 Make your way 
                                 out & create memories
                             </p>
+                            <p class="coming-soon">
+                                Coming Soon...
+                            </p>
                         </div>
                     </div>
                     <div class="attraction-item">
@@ -169,12 +189,15 @@
                             <p class="attraction-text">
                                 To gaze into the starry night 
                             </p>
+                            <p class="coming-soon">
+                                Coming Soon...
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="section about container container-flex">
+        <div class="section about container">
             <div class="section-body">
                 <h1 class="section-title">
                     About Little Creek
@@ -182,11 +205,16 @@
                 <p class="section-text">
                     Little Creek is sustainable campsite & refreshment point for wanderers, 
                     trekkers, adventurers, travellers of all sorts, for a detour towards the 
-                    road less travelled.Little Creek intends to grow and be inclusive  
+                    road less travelled.
+                </p>
+                <p class="section-text">
+                    Little Creek intends to grow and be inclusive  
                     sustainable to planet and also people in the local areas.
                 </p>
             </div>
-            <img src="./assets/images/about_image.svg" alt="" class="section-image">
+            <div class="section-image">
+                <img src="./assets/images/about_image.svg" alt="">
+            </div>
         </div>
         <div class="section location container">
             <h1 class="section-title">
@@ -195,9 +223,11 @@
             <h3 class="sub-title">
                 62ph+5W
             </h3>
-            <img src="./assets/images/map.png" alt="" class="section-image">
+            <div class="section-image">
+                <img src="./assets/images/map.png" alt="" >
+            </div>
         </div>
-        <div class="section feedback container">
+        <div class="section feedback container" id="faq">
             <h1 class="section-title">
                 The Experiences
             </h1>
@@ -252,7 +282,7 @@
                 </div>
             </div>
         </div>
-        <div class="section faq container">
+        <div class="section faq">
             <h1 class="section-title">
                 Frequently Asked Questions
             </h1>
@@ -314,7 +344,7 @@
                     <a href="" class="footer-link">Know more</a>
                 </div>
                 <div class="footer-contact">
-                    <img src="./assets/images/Logo.svg" alt="" class="footer-logo">
+                    <img src="./assets/icons/logo_white.png" alt="" class="footer-logo">
                     <a href="" class="phone-number">+91 86863-39393</a>
                     <a href="" class="email">
                         littlecreekcampsite@gmail.com
