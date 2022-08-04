@@ -81,11 +81,28 @@ input,button,select,option{
     outline: none;
     border: none;
 }
+button{
+    color: #fff;
+    border-radius: .475rem;
+    padding: 1rem 2rem;
+    transition: .2s ease;
+    background: linear-gradient(92.33deg, #123D6E 5.25%, #2970A7 99.05%);;
+}
 button:hover{
     cursor: pointer;
-}
+    transform: scale(1.1);
+    }
 form *{
-    font-family: 'Lato';
+    font-family: 'Lato Medium';
+}
+input::placeholder{
+    color: #296fa592;
+}
+form input,select,option{
+    color: #296fa592;
+    font-weight: 400;
+    background-color: #fff;
+    padding: 1rem .5rem;
 }
 /* --Geneeric Tags End-- */
 
@@ -159,7 +176,7 @@ nav a.active{
 }
 form *{
     width: 100%;
-    height: 2rem;
+    /* height: 2rem; */
 }
 .attraction-item{
     width: 90%;
@@ -167,8 +184,26 @@ form *{
     flex-direction: column;
     align-items: center;
     margin: 1rem auto;
+    transition: .2s ease;
 }
-
+.attraction-image{
+    transition: .2s ease;
+}
+.attraction-item:hover .attraction-image{
+    transform: scale(1.3);
+}
+.coming-soon{
+    opacity: 0;
+}
+.attraction-item:nth-child(6) .coming-soon{
+    opacity: 1;
+}
+.attraction-item:nth-child(7) .coming-soon{
+    opacity: 1;
+}
+.attraction-item:nth-child(8) .coming-soon{
+    opacity: 1;
+}
 .ham-menu{
     z-index: 99;
     width: 2rem;
@@ -230,6 +265,9 @@ form *{
 }
 .location img{
     margin-top: -4rem;
+}
+.location a:hover{
+    filter: none;
 }
 .feedback .section-body{
     display: flex;
@@ -332,13 +370,13 @@ p.attraction-text{
 }
 .social-icons{
     display: flex;
-    justify-content: space-around;
 }
 .social-icons{
     margin: .5rem;
 }
 .social-icons a{
     width: 25%;
+    margin-right: .75rem;
 }
 .feedback-card{
     width: 55%;
@@ -417,6 +455,16 @@ footer h3{
     color: #fff;
 }
 @media screen and (max-width : 768px) {
+    
+    input[type='date']{
+        border-bottom: 1px solid var(--primary-color);
+    }
+    input[type='number']{
+        border-bottom: 1px solid var(--primary-color);
+    }
+    .booking-box{
+        padding: 0 .5rem;
+    }
     nav ul{
         position: absolute;
         right: 0;
@@ -450,7 +498,8 @@ footer h3{
     }
     p.hero-text{
         width: 70%;
-        margin: auto;
+        margin: 0 auto;
+        margin-bottom: 1rem;
     }
     .attractions .section-body{
         margin: 2rem auto;
@@ -480,7 +529,10 @@ footer h3{
     .booking-box form{
         flex-direction: row;
     }
-    .booking-box input,select{
+    .booking-box input[type='date']{
+        border-right: 1px solid;
+    }
+    .booking-box input[type='number']{
         border-right: 1px solid;
     }
     .about{
